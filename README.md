@@ -33,5 +33,5 @@ Periodic boundaries are often an annoying to deal with when looking at clusters 
 
 
 # Biology
-For biologists studying collective behavior in swarms, flocks, schools, etc. DBSCAN has natural parameters. Set epsilon equal to the median range of the organism's "zone of interaction". 
+For biologists studying collective behavior in swarms, flocks, schools, etc. DBSCAN has natural parameters. Set epsilon equal to the median of the organism's "zone of interaction" range. 
 
