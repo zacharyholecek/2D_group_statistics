@@ -4,14 +4,14 @@ Statistics and visualization of individual based simulations in 2D.
 # Purpose
 Fast collection of group data and visualization of directed individuals in 2D plane. Useful for quickly quanitifying and visualizing group behavior. Easy to modify by adding more statistics or making the visualization better for your purposes.
 
-# How to use:
+# How to use
 Download .ipynb file and add it to your working directory. To input use "import import_ipynb" and then import functions as necessary.
 
 All methods take either a 4 column (no cluster data column) or 5 column pandas dataframe as input. 
 
-To get clusters of your data from DB scan call:
+If you want to add clusters to your data using DB scan call:
 
-add_clusters(your_data_frame,episilon [see https://github.com/alitouka/spark_dbscan/wiki/Choosing-parameters-of-DBSCAN-algorithm], minimum sample amount, metric type (either built in to DBScan or "periodic", and 2D boundary (as a tuple, only needed for periodic metric type)). 
+add_clusters(your_data_frame,episilon [see https://github.com/alitouka/spark_dbscan/wiki/Choosing-parameters-of-DBSCAN-algorithm], minimum sample amount, metric type (either built in to DBScan or "periodic", and 2D boundary (as a 1x2 tuple, only needed for periodic metric type)). 
 
 To get the summary statistics for all points your data call:
 
@@ -32,6 +32,6 @@ visualize_clusters(your_df_with_clusters, window_length_x, window_length_y,perio
 Periodic boundaries are often an annoying to deal with when looking at clusters in a 2D plane. This supports periodic boundary conditions for clustering, data gathering, and visualization. 
 
 
-
-
+# Biology
+For biologists studying collective behavior in swarms, flocks, schools, etc. DBSCAN has natural parameters. Set epsilon equal to the median range of the organism's "zone of interaction". 
 
