@@ -17,15 +17,15 @@ To get the summary statistics for all points your data call:
 
 summary_statistics(your_df, precision, periodic). periodic is a 3-tuple [Bool, float, float]. periodic[0] is True or False depending on if you are using periodic boundaries. If true, then input periodic[1] and [2] as the 2D boundary lengths in the x and y direction. This assumes that the boundary runs from [0, periodic[1]] in the x direction and [0,periodic[2]] in the y direction. This method returns a dictionary with keys:
 
- *'centroid' 
- *'average_distance'
- *'average_dir'
- *'polarization'
- *'angular_momentum'
- *'number'
- *'density'
- *'elongation'
- *'tilt'
+ 'centroid' 
+ 'average_distance'
+ 'average_dir'
+ 'polarization'
+ 'angular_momentum'
+ 'number'
+ 'density'
+ 'elongation'
+ 'tilt'
 
 To visualize clusters call:
 
